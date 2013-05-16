@@ -1,0 +1,6 @@
+@font-face { font-family: tulpenOne; src: url(tulpenOne.woff) }
+
+body{background-color: white}
+.code{
+  width:100%;
+}

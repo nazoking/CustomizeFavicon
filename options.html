@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customize Favicon</title>
+  <link href="style.css" rel="stylesheet" />
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="jquery.1.8.3.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="logger.js"></script>
+	<script src="lib.js"></script>
+	<script src="options.js"></script>
+</head>
+<body>
+		<h1>Customize Favicon</h1>
+		<table cellpadding="5px" cellspacing="0" class="table">
+			<thead>
+				<tr>
+					<th class="span1">Actions</th>
+					<th class="span1">Icon</th>
+					<th>Site Url</th>
+				</tr>
+			</thead>
+			<tbody id="urls">
+			</tbody>
+			<tfoot id="newUrl">
+					<tr style="display:none" id="template">
+						<td>
+							<input type="hidden" name="dataId" value="">
+							<button class="x-delete btn btn-mini">Delete</button>
+						</td>
+						<td><img height='16px' width='16px' class='image' /></td>
+						<td class='siteUrl'/></td>
+					</tr>
+			</tfoot>
+		</table>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head>
+<link href="style.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery.1.8.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="lib.js"></script>
+<script src="logger.js"></script>
+<script src="popup.js"></script>
+</head>
+<body>
+  <form id="newUrl"><input type="hidden" name="dataId" />
+		<div>SiteURL:<br />
+			<div class="input-prepend">
+				<div class="btn-group">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu x-combo-box siteUrls">
+					</ul>
+					<input name="siteUrl" placeholder="Site Url" type="text" class="span3"/>
+				</div>
+			</div>
+		</div>
+		<div>FaviconUrl<br />
+			<div class="input-prepend">
+				<span class="add-on"><img class="favIconImage icon x-render-resource" height="16px" width="16px" src="" /></span>
+				<input name="imageUrl" type="url" class="x-image-url span3" placeholder="Favicon Url" data-url-draw="favIconImage" />
+			</div>
+		</div>
+		<div><button class="x-save btn">Save</button></div>
+			<hr />
+			<label class="checkbox"><input name="useEdited" type="checkbox" value="on" class="x-fold" data-fold-for="editBoard">Use Ovarlay Edited
+				<canvas class="renderImage" height="16px" width="16px" src="" /></label>
+		<div id="editBoard" style="display:none">
+			Ovarlay favicon<br />
+			<div class="input-prepend">
+				<span class="add-on"><img class="image2 icon x-render-resource" height="16px" width="16px" src="" /></span>
+				<input name="imageUrl2" class="x-image-url" type="url" placeholder="Ovarlay favicon" data-url-draw="image2" />
+			</div>
+			<div class="input-prepend">
+			  <span class="add-on">POS:</span>
+			  <input name="image2Pos" class="x-render-resource span1" type="text" placeholder="x,y,w,h" value="3,3" />
+			</div>
+			<div class="input-prepend">
+			  <span class="add-on">BG:</span>
+			  <input name="image2Fill" class="x-render-resource span1" type="text" placeholder="rgb(0,0,0)" />
+			</div>
+			<div style="display:none">script can use canvas,img;<br />
+				<textarea name="code"></textarea><br />
+				<button class="x-render-resource">render</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
